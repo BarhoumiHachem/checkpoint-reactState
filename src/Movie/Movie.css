@@ -1,0 +1,42 @@
+
+.movielist{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 45px;
+    justify-content: center;
+    margin: 30px;
+}
+
+.card:hover{
+    border: 2px solid blue ;
+    padding: 10px;
+    color: blue;
+}
+
+.title{
+    font-size: 20px;
+    color: red;
+}
+
+.text{
+    font-size: 14px;
+}
+
+@media (max-width: 1200px){
+    .movielist{
+        grid-template-columns: repeat(3, 250px);
+    }
+}
+
+@media (max-width: 1000px){
+    .movielist{
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+
+@media (max-width: 670px){
+    .movielist{
+        grid-template-columns: repeat(1, 250px);
+    }
+}
+
