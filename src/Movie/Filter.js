@@ -1,5 +1,6 @@
 import React from 'react'
 import { Form, Button, Navbar, Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import AddMovie from './AddMovie'
 
 const Filter = (props) => {
@@ -8,6 +9,7 @@ const Filter = (props) => {
         <div>
             <Navbar bg="light" expand="lg">
                 <Container fluid>
+                    <Link to="/"><Button variant="success">Home</Button></Link>
                     <AddMovie handelAddMovie={props.handelAddMovie}/>
                     <Form className="d-flex">
                         <Form.Control

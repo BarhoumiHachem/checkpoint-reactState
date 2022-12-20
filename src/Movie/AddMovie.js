@@ -11,8 +11,8 @@ const AddMovie = (props) => {
       Title: "",
       posterURL: "",
       Description: "",
-      //rating: "",
-      Id: uuidv4(),
+      rating: "",
+      id: uuidv4(),
   },
   ])
 
@@ -29,7 +29,7 @@ const AddMovie = (props) => {
           posterURL: "",
           Description: "",
           rating: "",
-          Id: uuidv4(),
+          id: uuidv4(),
       },
       )
       handleClose()
@@ -71,6 +71,16 @@ const AddMovie = (props) => {
                 type="text"
                 placeholder="put the posterURL-movie"
                 name="posterURL"
+                onChange={handleChange}
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>trailer url</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="put the trailer url-movie"
+                name="trailer"
                 onChange={handleChange}
                 autoFocus
               />
